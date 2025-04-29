@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let diaIngresado = prompt("Ingrese un día de la semana:");
+        let resultado;
+
+        switch (diaIngresado) {
+            case "lunes":
+            case "LUNES":
+            case "Martes":
+            case "MARTES":
+            case "miercoles":
+            case "MIERCOLES":
+            case "jueves":
+            case "JUEVES":
+            case "viernes":
+            case "VIERNES":
+                resultado = "Es un día laborable.";
+                break;
+            case "sabado":
+            case "SABADO":
+            case "domingo":
+            case "DOMINGO":
+                resultado = "Es fin de semana.";
+                break;
+            default:
+                resultado = "El día ingresado no es válido.";
+        }
+        alert(resultado);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let opcion = prompt("Ingrese una opción (1: Saludar, 2: Despedir, 3: Preguntar):");
+        let mensaje;
+        switch (opcion) {
+            case "1":
+                mensaje = "¡Hola! ¿Como estás?";
+                break;
+            case "2":
+                mensaje = "¡Adios! Que tengas un buen dia.";
+                break;
+            case "3":
+                mensaje = "¿En que puedo ayudarte?";
+                break;
+            default:
+                mensaje = "Opción invalida.";
+        }
+        alert(mensaje);
+    </script>
+</body>
+
+</html>

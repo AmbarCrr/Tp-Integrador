@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let nombreUsuario = prompt("Ingrese su nombre de usuario:");
+        let mensaje;
+        switch (nombreUsuario) {
+            case "admin":
+            case "ADMIN":
+                mensaje = "Bienvenido administrador. Acceso completo.";
+                break;
+            case "cliente":
+            case "CLIENTE":
+                mensaje = "Hola cliente. Acceso a tu panel de usuario.";
+                break;
+            case "invitado":
+            case "INVITADO":
+                mensaje = "Bienvenido invitado. Acceso limitado activado.";
+                break;
+            default:
+                mensaje = "Usuario no reconocido. Acceso denegado.";
+        }
+        alert(mensaje);
+    </script>
+</body>
+
+</html>

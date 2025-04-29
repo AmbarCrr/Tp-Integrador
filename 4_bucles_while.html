@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const contraseñaCorrecta = "admin123";
+        let contraseñaIngresada;
+        while (true) {
+            contraseñaIngresada = prompt("Por favor, ingresa la contraseña:");
+            if (contraseñaIngresada === contraseñaCorrecta) {
+                console.log("¡Acceso concedido!");
+                break; 
+            } else {
+                console.log("Contraseña incorrecta. Intenta de nuevo.");
+            }
+        }
+    </script>
+</body>
+
+</html>

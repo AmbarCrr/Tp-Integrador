@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let suma = 0;
+        let numero;
+
+        while (numero !== 0) {
+            let entrada = prompt("Ingresa un número (0 para terminar):");
+            numero = parseInt(entrada); // Convertimos la entrada a un entero
+            if (!isNaN(numero)) {
+                suma += numero;
+            } else if (entrada !== null) {
+                alert("Entrada no válida. Ingresa un número.");
+                numero = undefined; // Para que el bucle siga si la entrada no es válida
+            }
+        }
+
+        console.log("La suma es:", suma);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const persona = {
+            nombre: "Juan",
+            edad: 30,
+            ciudad: "Río Grande"
+        };
+        console.log("Propiedades del objeto persona:");
+        for (const clave in persona) {
+            const valor = persona[clave];
+            console.log(`${clave}: ${valor}`);
+        }
+    </script>
+</body>
+
+</html>

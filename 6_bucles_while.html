@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let opciones;
+        let salir = "salir"
+        while(true){
+            opciones = prompt("Selecciona una opcion (saludar)(fecha actual)(numero aleatorio)(salir)")
+            if (opciones == "salir"){
+                break;
+            } else if (opciones == "saludar"){
+                console.log("Hola")
+            }else if (opciones == "fecha actual"){
+                console.log("Nose la fecha actual")
+            } else if (opciones == "numero aleatorio"){
+                console.log ("numero aleatorio")
+            } else {
+                console.log("Error, Escribe la opcion ta cual se muestra en pantalla")
+            }
+        }
+
+    </script>
+</body>
+</html>
